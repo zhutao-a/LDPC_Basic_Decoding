@@ -1,0 +1,14 @@
+EBN0=[ 3.5     3.8,      3.85,   3.9,     3.95    4,      4.05,    4.1,        4.15,   4.2,      4.5 ];
+ber= [ 0.0297, 0.0150,   0.0118, 0.0083,  0.0039, 0.0016, 0.0004,  7.8780e-06, 0,      0,        0   ];
+figure(1);
+semilogy(EBN0(1:8),ber(1:8),'k-o');
+xlabel('EBN0');
+ylabel('ber');
+R=(239/256)^2;
+N0 = (1/R)*(1./(exp(EBN0*log(10)/10)));
+sigma=sqrt(N0/2);
+rber = normcdf(0, 1, sigma);
+figure(2);
+semilogy(rber(1:8),ber(1:8),'k-o');
+xlabel('rber');
+ylabel('ber');

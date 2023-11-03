@@ -1,0 +1,45 @@
+List of files
+
+ldpc_dB_test.m
+ldpc_bf.m
+ldpc_wbf.m
+ldpc_iwbf.m
+ga.mat
+ha.mat
+
+ldpc_dB_test.m -  to generate a text file for BER/SNR values.  Uses BPSK. Change max values to shorten simulation time
+ldpc_bf.m - BF algorithm
+ldpc_wbf.m - WBF algorithm
+ldpc_iwbf.m - IWBF algorithm
+ldpc_irrwbf.m - IRRWBF algorithm
+ga.mat - 200,52 Generator matrix, taken from http://www.kozintsev.net/soft/ldpc_distr.zip
+ha.mat - 200,150 LDPC Matrix, sparse format, taken from http://www.kozintsev.net/soft/ldpc_distr.zip
+
+NOTE:  
+Codes were created using Matlab R2006a
+Some files needs the Communication Toolbox to run.
+Before running the code you may want to change the following in ldpc_dB_test.m.
+	max_block - number of message blocks to transmit.  Affects simulation length/time.
+	alp - optimum value for IWBF, varies on SNR and (N,K).
+	
+1. Load ga, ha. eg load ga
+2. Convert ha to full matrix.  eg. Hs=full(ha)
+3. Run ldpc_dB_test file eg. ldpc_dB_test(Ga,Hs,100,7,0.5);
+	Generates a text file for SNR performance from 0-7dB at 0.5 intervals.
+4. Wait for the simulation to complete.
+5. Open file ...*results.txt.  Use Matlab/Wordpad to open as text.
+	File name format is mm-dd_hr-min_NxK_results.txt
+	I changed it so that I will know when the simulation started and what the matrix size is.
+
+
+Some other sites to visit for LPDC codes
+http://www.inference.phy.cam.ac.uk/mackay/ - a master of LDPC, he started the LDPC fad in the 90s
+http://www.kozintsev.net/soft.html -  contains Matlab programs for LDPC
+http://arun-10.tripod.com/ldpc/ldpc.htm - a quick tutorial on LDPC with programs and explanations.
+
+
+
+For questions, suggestions and corrections regarding this program, email me at jgavan101@yahoo.com
+
+Release 1, June 13, 2007
+Release 2, June 22, 2007 - Added IRRWBF algorithm, changed format of output filename

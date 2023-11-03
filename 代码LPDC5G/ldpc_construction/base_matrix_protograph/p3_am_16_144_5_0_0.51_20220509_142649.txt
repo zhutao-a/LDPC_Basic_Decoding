@@ -1,0 +1,143 @@
+
+SIGMA: 0.485000		SNR: 3.274865 dB
+err_frames is 512 when frames :512
+
+frames :512		err_frames :512
+FER: 1.00e+00		BER: 1.72e-02		Throughput: 6.1 Mb/s
+
+
+SIGMA: 0.482500		SNR: 3.319754 dB
+err_frames is 512 when frames :512
+
+frames :512		err_frames :512
+FER: 1.00e+00		BER: 1.63e-02		Throughput: 6.1 Mb/s
+
+
+SIGMA: 0.480000		SNR: 3.364875 dB
+err_frames is 511 when frames :512
+
+frames :512		err_frames :511
+FER: 9.98e-01		BER: 1.54e-02		Throughput: 6.1 Mb/s
+
+
+SIGMA: 0.477500		SNR: 3.410233 dB
+err_frames is 509 when frames :512
+
+frames :512		err_frames :509
+FER: 9.94e-01		BER: 1.44e-02		Throughput: 6.2 Mb/s
+
+
+SIGMA: 0.475000		SNR: 3.455828 dB
+err_frames is 489 when frames :512
+
+frames :512		err_frames :489
+FER: 9.55e-01		BER: 1.29e-02		Throughput: 6.4 Mb/s
+
+
+SIGMA: 0.472500		SNR: 3.501664 dB
+err_frames is 428 when frames :512
+
+frames :512		err_frames :428
+FER: 8.36e-01		BER: 1.05e-02		Throughput: 7.0 Mb/s
+
+
+SIGMA: 0.470000		SNR: 3.547743 dB
+err_frames is 314 when frames :512
+
+frames :512		err_frames :314
+FER: 6.13e-01		BER: 7.24e-03		Throughput: 8.5 Mb/s
+
+
+SIGMA: 0.467500		SNR: 3.594068 dB
+err_frames is 184 when frames :512
+
+frames :512		err_frames :184
+FER: 3.59e-01		BER: 3.98e-03		Throughput: 12.4 Mb/s
+
+
+SIGMA: 0.465000		SNR: 3.640641 dB
+err_frames is 70 when frames :512
+
+frames :512		err_frames :70
+FER: 1.37e-01		BER: 1.41e-03		Throughput: 21.0 Mb/s
+
+
+SIGMA: 0.462500		SNR: 3.687465 dB
+err_frames is 15 when frames :512
+
+frames :512		err_frames :15
+FER: 2.93e-02		BER: 2.79e-04		Throughput: 36.2 Mb/s
+
+
+SIGMA: 0.460000		SNR: 3.734543 dB
+err_frames is 1 when frames :512
+
+err_frames is 3 when frames :1024
+
+err_frames is 4 when frames :1536
+
+err_frames is 5 when frames :2048
+
+err_frames is 6 when frames :2560
+
+err_frames is 8 when frames :3072
+
+err_frames is 10 when frames :3584
+
+frames :3584		err_frames :10
+FER: 2.79e-03		BER: 2.82e-05		Throughput: 57.3 Mb/s
+
+
+SIGMA: 0.457500		SNR: 3.781878 dB
+err_frames is 1 when frames :4096
+
+err_frames is 2 when frames :5120
+
+err_frames is 3 when frames :5632
+
+err_frames is 4 when frames :13824
+
+err_frames is 5 when frames :23552
+
+err_frames is 6 when frames :27648
+
+err_frames is 7 when frames :28160
+
+err_frames is 8 when frames :29184
+
+err_frames is 9 when frames :32768
+
+err_frames is 10 when frames :40960
+
+frames :40960		err_frames :10
+FER: 2.44e-04		BER: 2.45e-06		Throughput: 75.3 Mb/s
+
+
+SIGMA: 0.455000		SNR: 3.829472 dB
+err_frames is 1 when frames :4096
+
+err_frames is 2 when frames :27648
+
+err_frames is 3 when frames :118784
+
+err_frames is 4 when frames :130048
+
+err_frames is 5 when frames :235008
+
+err_frames is 6 when frames :367616
+
+err_frames is 7 when frames :375808
+
+err_frames is 8 when frames :413184
+
+err_frames is 9 when frames :541184
+
+err_frames is 10 when frames :631808
+
+frames :631808		err_frames :10
+FER: 1.58e-05		BER: 1.50e-07		Throughput: 87.4 Mb/s
+
+
+SIGMA: 0.452500		SNR: 3.877329 dB
+err_frames is 1 when frames :1630208
+

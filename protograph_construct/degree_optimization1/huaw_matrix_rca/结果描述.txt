@@ -1,0 +1,84 @@
+利用RCA算法来求矩阵的译码迭代阈值
+iter=250
+对于给定的参考案例
+不puncture：		Rate=0.6250，EBN0=1.3712dB
+puncture：		Rate=0.6667，EBN0=1.3009dB
+对于华为的矩阵
+不puncture：		Rate=0.7826，EBN0=2.3646dB
+puncture：		Rate=0.8000，EBN0=2.2891dB
+
+iter=150
+对于给定的参考案例
+不puncture：		Rate=0.6250，EBN0=1.3812dB
+puncture：		Rate=0.6667，EBN0=1.3109dB
+对于华为的矩阵
+不puncture：		Rate=0.7826，EBN0=2.3646dB
+puncture：		Rate=0.8000，EBN0=2.2891dB
+
+iter=100
+对于给定的参考案例
+不puncture：		Rate=0.6250，EBN0=1.4012dB
+puncture：		Rate=0.6667，EBN0=1.3309dB
+对于华为的矩阵
+不puncture：		Rate=0.7826，EBN0=2.3646dB
+puncture：		Rate=0.8000，EBN0=2.2991dB
+
+iter=50
+对于给定的参考案例
+不puncture：		Rate=0.6250，EBN0=1.4812dB
+puncture：		Rate=0.6667，EBN0=1.4309dB
+对于华为的矩阵
+不puncture：		Rate=0.7826，EBN0=2.3946dB
+puncture：		Rate=0.8000，EBN0=2.3491dB
+
+iter=40
+对于给定的参考案例
+不puncture：		Rate=0.6250，EBN0=1.5312dB
+puncture：		Rate=0.6667，EBN0=1.4909dB
+对于华为的矩阵
+不puncture：		Rate=0.7826，EBN0=2.4246dB
+puncture：		Rate=0.8000，EBN0=2.3891dB
+
+iter=30
+对于给定的参考案例
+不puncture：		Rate=0.6250，EBN0=1.6412dB
+puncture：		Rate=0.6667，EBN0=1.6209dB
+对于华为的矩阵
+不puncture：		Rate=0.7826，EBN0=2.4646dB
+puncture：		Rate=0.8000，EBN0=2.4491dB
+
+iter=20
+对于给定的参考案例
+不puncture：		Rate=0.6250，EBN0=1.8912dB
+puncture：		Rate=0.6667，EBN0=1.9309dB
+对于华为的矩阵
+不puncture：		Rate=0.7826，EBN0=2.5746dB
+puncture：		Rate=0.8000，EBN0=2.6191dB
+
+iter=10
+对于给定的参考案例
+不puncture：		Rate=0.6250，EBN0=2.7812dB
+puncture：		Rate=0.6667，EBN0=3.0009dB
+对于华为的矩阵
+不puncture：		Rate=0.7826，EBN0=3.0546dB
+puncture：		Rate=0.8000，EBN0=3.2591dB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+%decode_NMS_modified
+%decode_NMS
+sigma:0.3600	frame:100	rber:1.8359e-03	fer:3.0000e-02	ber:1.9531e-04
+sigma:0.3480	frame:100	rber:1.4844e-03	fer:2.0000e-02	ber:1.5625e-04
+sigma:0.3360	frame:100	rber:1.0938e-03	fer:1.0000e-02	ber:7.8125e-05
+sigma:0.3240	frame:100	rber:8.2031e-04	fer:1.0000e-02	ber:7.8125e-05
+sigma:0.3120	frame:100	rber:6.2500e-04	fer:1.0000e-02	ber:7.8125e-05
+sigma:0.3000	frame:100	rber:3.1250e-04	fer:1.0000e-02	ber:7.8125e-05
+
+sigma:0.3600	frame:100	rber:1.8359e-03	fer:1.9000e-01	ber:6.2891e-03
+sigma:0.3480	frame:100	rber:1.4844e-03	fer:1.6000e-01	ber:5.0391e-03
+sigma:0.3360	frame:100	rber:1.0938e-03	fer:1.1000e-01	ber:2.6563e-03
+sigma:0.3240	frame:100	rber:8.2031e-04	fer:7.0000e-02	ber:2.3047e-03
+sigma:0.3120	frame:100	rber:6.2500e-04	fer:3.0000e-02	ber:1.0938e-03
+sigma:0.3000	frame:100	rber:3.1250e-04	fer:4.0000e-02	ber:1.7188e-03

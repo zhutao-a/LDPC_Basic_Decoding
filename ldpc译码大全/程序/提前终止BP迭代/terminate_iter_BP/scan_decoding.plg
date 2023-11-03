@@ -1,0 +1,83 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: scan_decoding - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\admin\AppData\Local\Temp\RSPC389.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/scan_decoding.pdb" /debug /machine:I386 /out:"Debug/scan_decoding.exe" /pdbtype:sept 
+".\Debug\scan_decoding.obj"
+]
+Creating command line "link.exe @C:\Users\admin\AppData\Local\Temp\RSPC389.tmp"
+<h3>Output Window</h3>
+Linking...
+scan_decoding.obj : warning LNK4044: unrecognized option "FAILIFMISMATCH:_MSC_VER=1700"; ignored
+scan_decoding.obj : warning LNK4044: unrecognized option "FAILIFMISMATCH:_ITERATOR_DEBUG_LEVEL=2"; ignored
+scan_decoding.obj : warning LNK4044: unrecognized option "FAILIFMISMATCH:RuntimeLibrary=MDd_DynamicDebug"; ignored
+MSVCRTD.lib(cinitexe.obj) : warning LNK4078: multiple ".CRT" sections found with different attributes (C0300040)
+scan_decoding.obj : error LNK2001: unresolved external symbol __imp___invalid_parameter
+scan_decoding.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall std::_Lockit::_Lockit(int)" (__imp_??0_Lockit@std@@QAE@H@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol __imp___fseeki64
+scan_decoding.obj : error LNK2001: unresolved external symbol __imp___lock_file
+scan_decoding.obj : error LNK2001: unresolved external symbol __imp___unlock_file
+scan_decoding.obj : error LNK2001: unresolved external symbol __imp__memcpy_s
+scan_decoding.obj : error LNK2001: unresolved external symbol "void __cdecl operator delete[](void *)" (??_V@YAXPAX@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol "void * __cdecl operator new[](unsigned int)" (??_U@YAPAXI@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol __imp___CrtDbgReportW
+scan_decoding.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) void __cdecl std::_Debug_message(wchar_t const *,wchar_t const *,unsigned int)" (__imp_?_Debug_message@std@@YAXPB_W0I@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall std::_Container_base12::_Container_base12(void)" (__imp_??0_Container_base12@std@@QAE@XZ)
+scan_decoding.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall std::_Container_base12::~_Container_base12(void)" (__imp_??1_Container_base12@std@@QAE@XZ)
+scan_decoding.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall std::_Container_base12::_Orphan_all(void)" (__imp_?_Orphan_all@_Container_base12@std@@QAEXXZ)
+scan_decoding.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) void __cdecl std::_Xbad_alloc(void)" (__imp_?_Xbad_alloc@std@@YAXXZ)
+scan_decoding.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) void __cdecl std::_Xlength_error(char const *)" (__imp_?_Xlength_error@std@@YAXPBD@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) void __cdecl std::_Xout_of_range(char const *)" (__imp_?_Xout_of_range@std@@YAXPBD@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol "void __cdecl std::_Facet_Register(class std::_Facet_base *)" (?_Facet_Register@std@@YAXPAV_Facet_base@1@@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) private: static class std::locale::_Locimp * __cdecl std::locale::_Getgloballocale(void)" (__imp_?_Getgloballocale@locale@std@@CAPAV_Locimp@12@XZ)
+scan_decoding.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: int __thiscall std::codecvt<char,char,int>::unshift(int &,char *,char *,char * &)const " (__imp_?unshift@?$codecvt@DDH@std@@QBEHAAHPAD1AAPAD@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: static unsigned int __cdecl std::codecvt<char,char,int>::_Getcat(class std::locale::facet const * *,class std::locale const *)" (__imp_?_Getcat@?$codecvt@DDH@std@@SAIPAPBVfacet@locale@2@PBV42@@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) char const * __cdecl std::_Syserror_map(int)" (__imp_?_Syserror_map@std@@YAPBDH@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) char const * __cdecl std::_Winerror_map(int)" (__imp_?_Winerror_map@std@@YAPBDH@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __int64 __thiscall std::ios_base::width(void)const " (__imp_?width@ios_base@std@@QBE_JXZ)
+scan_decoding.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __int64 __thiscall std::ios_base::width(__int64)" (__imp_?width@ios_base@std@@QAE_J_J@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: class std::locale __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::getloc(void)const " (__imp_?getloc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QBE?AVlocale@2@XZ)
+scan_decoding.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __int64 __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::sputn(char const *,__int64)" (__imp_?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAE_JPBD_J@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: __thiscall std::basic_ostream<char,struct std::char_traits<char> >::basic_ostream<char,struct std::char_traits<char> >(class std::basic_streambuf<char,struct std::char_traits<char> > *,bool)" (__imp_??0?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@PAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: virtual void __thiscall std::basic_ostream<char,struct std::char_traits<char> >::_Add_vtordisp2(void)" (__imp_?_Add_vtordisp2@?$basic_ostream@DU?$char_traits@D@std@@@std@@UAEXXZ)
+scan_decoding.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) public: void __thiscall std::basic_ostream<char,struct std::char_traits<char> >::_Osfx(void)" (__imp_?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ)
+scan_decoding.obj : error LNK2001: unresolved external symbol "void __cdecl sort(unsigned int *,unsigned int)" (?sort@@YAXPAII@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol "void __cdecl constructBECpolar(double,unsigned int,unsigned int,unsigned int,unsigned int *)" (?constructBECpolar@@YAXNIIIPAI@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol "public: __thiscall polar::polar(unsigned int,unsigned int,unsigned int,unsigned int *,unsigned int *)" (??0polar@@QAE@IIIPAI0@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol "public: __thiscall polar::~polar(void)" (??1polar@@QAE@XZ)
+scan_decoding.obj : error LNK2001: unresolved external symbol "public: void __thiscall polar::randvec(void)" (?randvec@polar@@QAEXXZ)
+scan_decoding.obj : error LNK2001: unresolved external symbol "public: void __thiscall polar::encode(void)" (?encode@polar@@QAEXXZ)
+scan_decoding.obj : error LNK2001: unresolved external symbol "public: void __thiscall polar::channelout(double,double)" (?channelout@polar@@QAEXNN@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol "public: void __thiscall polar::call_SCANdecoding(unsigned int,unsigned int &)" (?call_SCANdecoding@polar@@QAEXIAAI@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol "public: unsigned int __thiscall polar::errbitcount(void)" (?errbitcount@polar@@QAEIXZ)
+scan_decoding.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) struct std::_Smanip<__int64> __cdecl std::setw(__int64)" (__imp_?setw@std@@YA?AU?$_Smanip@_J@1@_J@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) struct _iobuf * __cdecl std::_Fiopen(char const *,int,int)" (__imp_?_Fiopen@std@@YAPAU_iobuf@@PBDHH@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall std::basic_ios<char,struct std::char_traits<char> >::_Add_vtordisp1(void)" (?_Add_vtordisp1@?$basic_ios@DU?$char_traits@D@std@@@std@@UAEXXZ)
+scan_decoding.obj : error LNK2001: unresolved external symbol "protected: virtual __int64 __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::showmanyc(void)" (?showmanyc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAE_JXZ)
+scan_decoding.obj : error LNK2001: unresolved external symbol "protected: virtual __int64 __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::xsgetn(char *,__int64)" (?xsgetn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAE_JPAD_J@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol "protected: virtual __int64 __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::xsputn(char const *,__int64)" (?xsputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAE_JPBD_J@Z)
+scan_decoding.obj : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+scan_decoding.obj : error LNK2001: unresolved external symbol @__security_check_cookie@4
+scan_decoding.obj : error LNK2001: unresolved external symbol __RTC_CheckEsp
+scan_decoding.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+scan_decoding.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+scan_decoding.obj : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+scan_decoding.obj : error LNK2001: unresolved external symbol "__declspec(dllimport) __int64 const std::_BADOFF" (__imp_?_BADOFF@std@@3_JB)
+scan_decoding.obj : error LNK2001: unresolved external symbol ___security_cookie
+Debug/scan_decoding.exe : fatal error LNK1120: 53 unresolved externals
+Ö´ÐÐ link.exe Ê±³ö´í.
+
+
+
+<h3>Results</h3>
+scan_decoding.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

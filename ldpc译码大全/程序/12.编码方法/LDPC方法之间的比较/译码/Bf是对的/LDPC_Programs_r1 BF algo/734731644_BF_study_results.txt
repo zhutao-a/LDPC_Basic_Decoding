@@ -1,0 +1,107 @@
+
+ Date Stamp=  734731644
+
+ SNR=  0.0E+000
+ blocks=  1
+ BFbiterrors=  104
+ bit=  200
+ WBFbiterrors=  23
+ IWBFbiterrors=  23
+
+ SNR=  5.0E-001
+ blocks=  1
+ BFbiterrors=  102
+ bit=  200
+ WBFbiterrors=  22
+ IWBFbiterrors=  22
+
+ SNR=  1.0E+000
+ blocks=  1
+ BFbiterrors=  90
+ bit=  200
+ WBFbiterrors=  18
+ IWBFbiterrors=  18
+
+ SNR=  1.5E+000
+ blocks=  1
+ BFbiterrors=  102
+ bit=  200
+ WBFbiterrors=  2
+ IWBFbiterrors=  2
+
+ SNR=  2.0E+000
+ blocks=  1
+ BFbiterrors=  110
+ bit=  200
+ WBFbiterrors=  10
+ IWBFbiterrors=  10
+
+ SNR=  2.5E+000
+ blocks=  1
+ BFbiterrors=  110
+ bit=  200
+ WBFbiterrors=  3
+ IWBFbiterrors=  3
+
+ SNR=  3.0E+000
+ blocks=  1
+ BFbiterrors=  0
+ bit=  200
+ WBFbiterrors=  0
+ IWBFbiterrors=  0
+
+ SNR=  3.5E+000
+ blocks=  1
+ BFbiterrors=  0
+ bit=  200
+ WBFbiterrors=  3
+ IWBFbiterrors=  3
+
+ SNR=  4.0E+000
+ blocks=  1
+ BFbiterrors=  0
+ bit=  200
+ WBFbiterrors=  0
+ IWBFbiterrors=  0
+
+ SNR=  4.5E+000
+ blocks=  1
+ BFbiterrors=  0
+ bit=  200
+ WBFbiterrors=  0
+ IWBFbiterrors=  0
+
+ SNR=  5.0E+000
+ blocks=  1
+ BFbiterrors=  0
+ bit=  200
+ WBFbiterrors=  0
+ IWBFbiterrors=  0
+
+ SNR=  5.5E+000
+ blocks=  1
+ BFbiterrors=  0
+ bit=  200
+ WBFbiterrors=  0
+ IWBFbiterrors=  0
+
+ SNR=  6.0E+000
+ blocks=  1
+ BFbiterrors=  0
+ bit=  200
+ WBFbiterrors=  0
+ IWBFbiterrors=  0
+
+ SNR=  6.5E+000
+ blocks=  1
+ BFbiterrors=  108
+ bit=  200
+ WBFbiterrors=  0
+ IWBFbiterrors=  0
+
+ SNR=  7.0E+000
+ blocks=  1
+ BFbiterrors=  98
+ bit=  200
+ WBFbiterrors=  0
+ IWBFbiterrors=  0

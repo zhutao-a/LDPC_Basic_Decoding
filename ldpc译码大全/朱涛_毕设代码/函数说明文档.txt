@@ -1,0 +1,18 @@
+makeLdpc.m		//利用随机构造法产生校验矩阵H
+makeParityChk.m		//将矩阵H换列得到新的newH以便用于产生冗余比特
+matrixnewH.m		//产生newH，作用与makeParityChk.m一致
+			//但将L1,U1,newH存储起来，使每种仿真均用同一校验矩阵
+L1			//matrixnewH.m产生的数据
+U1			//matrixnewH.m产生的数据
+newH			//matrixnewH.m产生的数据
+decodeProbDomain.m	//普通的BP算法
+decodeLogDomain.m	//LLR_BP算法
+decodeLogDomainSimple.m	//MS算法
+decode_serialBP.m		//串行BP算法，利用MS	
+decodeimproved_serialBP.m	//改进串行BP算法，利用MS	
+decodegeneration_serialBP.m	//隔代改进串行BP算法，利用MS
+my_test.m			//测试性文件，所有算法通过此程序仿真
+
+
+
+

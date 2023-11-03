@@ -1,0 +1,38 @@
+ysw1.m  表示码长为A，BPSK调制解调，计算BER主程序，保存结果数据
+ysw1_1.m 表示码长为A，无调制解调，计算BER主程序，保存结果数据
+ysw1_1_plot.m  码长为A，无调制解调，画出结果图
+ysw1_plot.m  码长为A，BPSK调制解调，画出结果图
+ysw1_plot_compare.m  码长为A，BPSK调制解调 + 无调制解调，画出结果图
+
+ysw2.m  表示码长为B，BPSK调制解调，计算BER主程序，保存结果数据
+ysw2_1.m 表示码长为B，无调制解调，计算BER主程序，保存结果数据
+ysw2_1_plot.m  码长为B，无调制解调，画出结果图
+ysw2_plot.m  码长为B，BPSK调制解调，画出结果图
+ysw2_plot_compare.m  码长为B，BPSK调制解调 + 无调制解调，画出结果图
+
+ysw3.m  表示码长为C，BPSK调制解调，计算BER主程序，保存结果数据
+ysw3_1.m 表示码长为C，无调制解调，计算BER主程序，保存结果数据
+ysw3_1_plot.m  码长为C，无调制解调，画出结果图
+ysw3_plot.m  码长为C，BPSK调制解调，画出结果图
+ysw3_plot_compare.m  码长为C，BPSK调制解调 + 无调制解调，画出结果图
+
+ysw123_plot.m  码长为A-B-C，BPSK调制解调，对比 画出结果图
+ysw123_plot_no.m  码长为A-B-C，无调制解调，对比 画出结果图
+ysw123_cmpare.m  码长为A-B-C，BPSK调制解调 + 无调制解调，对比 画出结果图
+
+
+ysw_BPSK_AWGN.m  码长为A，BPSK调制解调，AWGN信道，计算BER主程序，保存结果数据
+ysw_AWGN_plot.m  码长为A，BPSK调制解调，AWGN信道，画出结果图
+ysw_BPSK_Rayleigh.m  码长为A，BPSK调制解调，Rayleigh信道，计算BER主程序，保存结果数据
+ysw_Rayl_plot.m      码长为A，BPSK调制解调，Rayleigh信道，画出结果图
+ysw_plot_compare.m   码长为A，BPSK调制解调，AWGN信道+Rayleigh信道，对比画出结果图
+
+
+ysw_BPSK.m   码长为A，BPSK调制解调，AWGN和瑞利衰落信道，计算BER主程序，保存结果数据
+ysw_BPSK_plot.m  码长为A，BPSK调制解调，AWGN和瑞利衰落信道，画出结果图
+ysw_QPSK.m   码长为A，QPSK调制解调，AWGN和瑞利衰落信道，计算BER主程序，保存结果数据
+ysw_QPSK_plot.m  码长为A，QPSK调制解调，AWGN和瑞利衰落信道，画出结果图
+ysw_plot_compare.m  码长为A，BPSK调制解调 + QPSK调制解调，AWGN信道+Rayleigh信道，对比画出结果图
+
+
+

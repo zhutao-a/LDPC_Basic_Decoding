@@ -1,0 +1,190 @@
+clc;
+clear all;
+format long;
+
+% [H,p,J,L]=girth8_8_8();
+% [M,N] = size(H);
+% A1=H(1:(M/4),1:(N/4));
+% A2=H(((M/4)+1):(M/2),((N/2)+1):N);
+% A=H(((M/2)+1):(3*M/4),1:(N/2));
+% B=H(((M/2)+1):(3*M/4),((N/2)+1):N);
+% C=H(((3*M/4)+1):M,1:(N/2));
+% D=H(((3*M/4)+1):M,((N/2)+1):N);
+A1 = my_A1(1100);
+A2 = my_A2(1100);
+Ar1 = my_A(1100);
+Br1 = my_A(1100);
+Ar2 = my_A(1100);
+Br2 = my_A(1100);
+D = myD(1100);
+H1=[A1 D];
+H2=[A2 D];
+[M1,N1] = size(H1);
+[M2,N2] = size(H2);
+ I = eye(M1);
+ O1= zeros(M1,N1);
+ O2= zeros(M1);
+%% S1 encoding 
+dSource1 = round(rand(N1-M1, 1)); %information bits for S 500
+dS1 = dSource1;
+c1 = zeros(M1,1);
+for t = 1:M1
+    sum1 = H1(t,1:N1-M1+t-1)*dS1;
+    c1(t) = mod(sum1,2);
+    dS1 = [dS1;c1(t)];
+    sum1 = 0;
+end %t
+u1 = [dSource1;c1];
+z = mod(H1*u1,2);
+if length(find(z)) == 0
+    disp('S1 encoded');
+end
+%% S2 encoding
+dSource2 = round(rand(N2-M2, 1));
+dS2 = dSource2;
+c2 = zeros(M2,1);
+for t = 1:M2
+    sum2 = H2(t,1:N2-M2+t-1)*dS2;% only information bits
+    c2(t) = mod(sum2,2);
+    dS2 = [dS2;c2(t)];
+    sum2 = 0;
+end
+u2 = [dSource2;c2];
+z = mod(H2*u2,2);
+if length(find(z)) == 0
+    disp('S2 encoded');
+end
+%% R1 encoding
+ u=[u1;u2];
+ Hr1=[Ar1 Br1 D];
+ [M3,N3]=size(Hr1);
+
+
+cr1 = zeros(M3,1);
+uu = u;%4400x1
+for t = 1:M3
+    sum3 = Hr1(t,1:N3+t-1)*uu;
+    cr1(t) = mod(sum3,2);
+    uu = [uu;cr1(t)];
+    sum3 = 0;
+end %t
+ur1 = [u;cr1];
+ 
+z = mod(Hr1*ur1,2);
+if length(find(z)) == 0
+    disp('R1 encoded');
+else
+    disp('wrong encoded');
+end
+%% R2 encoding
+%  u=[u1;u2];
+%  Hr2=[Ar2 Br2 D];
+%  [M4,N4]=size(Hr2);
+% 
+%  cr2 = zeros(M4,1);
+% uu = u;
+% for t = 1:M4
+%     sum4 = Hr2(t,1:N4+t-1)*uu;
+%     cr2(t) = mod(sum4,2);
+%     uu = [uu;cr2(t)];
+%     sum4 = 0;
+% end %t
+% ur2 = [u;cr2];
+% z = mod(Hr2*ur2,2);
+% if length(find(z)) == 0
+%     disp('R2 encoded');
+% else
+%     disp('wrong encoded');
+% end
+% %% Jointly encoding
+%   HD=[H1 O1 O2 O2;O1 H2 O2 O2;Ar1 Br1 D O2;Ar2 Br2 O2 D];
+% %    dd=size(HD)
+%   ud =[u1;u2;cr1;cr2];
+% %    uu=size(ud)
+% z = mod(HD*ud,2);
+% if length(find(z)) == 0
+%     disp('Jointly encoded');
+% else
+%     disp('Wrong encoder');
+% end
+% 
+% %% transmitting
+% Eb_N0= 0:5:25;
+% iter=10;
+% frame=1;
+% 
+% bpskS1D=2*u1-1;
+% bpskS2D=2*u2-1;
+% bpskR1D=2*cr1-1;
+% bpskR2D=2*cr2-1;
+% 
+% for i=1:length(Eb_N0)
+% %    sigma_2=1/(2*(10^(Eb_N0(i)/10))*R);
+%     ber1(i)=0;
+%     ber5(i)=0;
+%     ber10(i)=0;
+%     for j=1:frame
+%         
+%         ray_H1 = wgn(1,1,0,'dBW','complex'); 
+%         ray_H2 = wgn(1,1,0,'dBW','complex'); 
+%         ray_Hr1 = wgn(1,1,0,'dBW','complex');
+%         ray_Hr2 = wgn(1,1,0,'dBW','complex');
+%         C1 = ray_H1';
+%         C2 = ray_H2';
+%         C3 = ray_Hr1';
+%         C4 = ray_Hr2';
+%         
+%         N0  = 1/(10^(Eb_N0(i)/10));
+%         N0r = 1/(10^((Eb_N0(i)+1)/10));
+%         
+%         nos1=wgn(1,N1,N0,'linear','complex');
+%         r1=ray_H1*bpskS1D'+nos1;
+%         tx1 = C1*r1;
+%         tx1=real(tx1);
+%         
+%         nos2=wgn(1,N2,N0,'linear','complex');
+%         r2=ray_H2*bpskS2D'+nos2;
+%         tx2 = C2*r2;
+%         tx2=real(tx2);
+%         
+%         nos3 = wgn(1,M3,N0r,'linear','complex');
+%         r3 =ray_Hr1*bpskR1D'+nos3;
+%         tx3=C3*r3;
+%         tx3=real(tx3);
+%         
+%         nos4 = wgn(1,M4,N0r,'linear','complex');
+%         r4 =ray_Hr2*bpskR2D'+nos4;
+%         tx4=C4*r4;
+%         tx4=real(tx4);
+%         
+%         tx=[tx1 tx2 tx3 tx4];
+% %        tx = tx./(N0/2);
+%         tx=tx';
+% %         qq=size(tx)
+% %        [vhat1,vhat10] = decodeProbDomain(tx, H, iter);
+%         [vhat1,vhat5,vhat10] = decodeLogDomainSimple(tx, HD, iter);
+%         [num1, rat1] = biterr(vhat1, ud');
+%         ber1(i) = (ber1(i) + rat1);
+%         [num5, rat5] = biterr(vhat5, ud');
+%         ber5(i) = (ber5(i) + rat5);
+%         [num10, rat10] = biterr(vhat10, ud');
+%         ber10(i) = (ber10(i) + rat10);
+%   end %for j
+%    ber1(i) = ber1(i)/frame;
+%    ber5(i) = ber5(i)/frame;
+%    ber10(i) = ber10(i)/frame;
+%    ber1(i),
+%    ber5(i),
+%    ber10(i),
+%    save ber1.mat ber1;
+%    save ber5.mat ber5;
+%    save ber10.mat ber10;
+%  end % for i
+% 
+% % semilogy(Eb_N0,BER,'o-');
+% semilogy(Eb_N0, ber1, '-ko',Eb_N0, ber5, '-ks',Eb_N0, ber10, '-kd');
+% xlabel('SNR (dB)');
+% ylabel('BER');
+% legend('RA code iter=1','RA code iter=5','RAcode iter=10',3);
+% grid on;
+% hold off;

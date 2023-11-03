@@ -1,0 +1,112 @@
+function dataout=select_12_to_6min(datain)%dataout=zeros(6,2); %datain=zeros(12,2);
+
+datain_a=datain(1:6,:);
+datain_b=datain(7:12,:);
+
+step1_data=zeros(10,2); 
+if(datain_a(1,1)>=datain_b(1,1))
+    step1_data(1,:)=datain_b(1,:);
+else
+    step1_data(1,:)=datain_a(1,:);
+end
+if(datain_a(3,1)>=datain_b(3,1))
+    step1_data(2,:)=datain_a(3,:);
+    step1_data(3,:)=datain_b(3,:);
+else
+    step1_data(2,:)=datain_b(3,:);
+    step1_data(3,:)=datain_a(3,:);
+end
+if(datain_a(5,1)>=datain_b(5,1))
+    step1_data(4,:)=datain_a(5,:);
+    step1_data(5,:)=datain_b(5,:);
+else
+    step1_data(4,:)=datain_b(5,:);
+    step1_data(5,:)=datain_a(5,:);
+end
+if(datain_a(2,1)>=datain_b(2,1))
+    step1_data(6,:)=datain_b(2,:);
+else
+    step1_data(6,:)=datain_a(2,:);
+end
+if(datain_a(4,1)>=datain_b(4,1))
+    step1_data(7,:)=datain_a(4,:);
+    step1_data(8,:)=datain_b(4,:);
+else
+    step1_data(7,:)=datain_b(4,:);
+    step1_data(8,:)=datain_a(4,:);
+end
+if(datain_a(6,1)>=datain_b(6,1))
+    step1_data(9,:)=datain_a(6,:);
+    step1_data(10,:)=datain_b(6,:);
+else
+    step1_data(9,:)=datain_b(6,:);
+    step1_data(10,:)=datain_a(6,:);
+end
+
+step2_data=zeros(8,2); 
+if(step1_data(1,1)>=step1_data(2,1))
+    step2_data(1,:)=step1_data(2,:);
+else
+    step2_data(1,:)=step1_data(1,:);
+end
+if(step1_data(3,1)>=step1_data(4,1))
+    step2_data(2,:)=step1_data(3,:);
+    step2_data(3,:)=step1_data(4,:);
+else
+    step2_data(2,:)=step1_data(4,:);
+    step2_data(3,:)=step1_data(3,:);
+end
+step2_data(4,:)=step1_data(5,:);
+if(step1_data(6,1)>=step1_data(7,1))
+    step2_data(5,:)=step1_data(7,:);
+else
+    step2_data(5,:)=step1_data(6,:);
+end
+if(step1_data(8,1)>=step1_data(9,1))
+    step2_data(6,:)=step1_data(8,:);
+    step2_data(7,:)=step1_data(9,:);
+else
+    step2_data(6,:)=step1_data(9,:);
+    step2_data(7,:)=step1_data(8,:);
+end
+step2_data(8,:)=step1_data(10,:);
+
+step3_data=zeros(7,2); 
+if(step2_data(1,1)>=step2_data(2,1))
+    step3_data(1,:)=step2_data(2,:);
+else
+    step3_data(1,:)=step2_data(1,:);
+end
+step3_data(2,:)=step2_data(3,:);
+step3_data(3,:)=step2_data(4,:);
+if(step2_data(5,1)>=step2_data(6,1))
+    step3_data(4,:)=step2_data(5,:);
+    step3_data(5,:)=step2_data(6,:);
+else
+    step3_data(4,:)=step2_data(6,:);
+    step3_data(5,:)=step2_data(5,:);
+end
+step3_data(6,:)=step2_data(7,:);
+step3_data(7,:)=step2_data(8,:);
+
+dataout=zeros(6,2); 
+if(step3_data(1,1)>=step3_data(4,1))
+    dataout(1,:)=step3_data(4,:);
+else
+    dataout(1,:)=step3_data(1,:);
+end
+if(step3_data(2,1)>=step3_data(5,1))
+    dataout(2,:)=step3_data(2,:);
+    dataout(3,:)=step3_data(5,:);
+else
+    dataout(2,:)=step3_data(5,:);
+    dataout(3,:)=step3_data(2,:);
+end
+if(step3_data(3,1)>=step3_data(6,1))
+    dataout(4,:)=step3_data(3,:);
+    dataout(5,:)=step3_data(6,:);
+else
+    dataout(4,:)=step3_data(6,:);
+    dataout(5,:)=step3_data(3,:);
+end
+dataout(6,:)=step3_data(7,:);
